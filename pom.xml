@@ -31,13 +31,14 @@
 			<version>42.2.1</version>
 		</dependency>
 
+		<!-- Mojarra 2.4.0 -->
 		<dependency>
 			<groupId>org.glassfish</groupId>
 			<artifactId>javax.faces</artifactId>
 			<version>2.2.2</version>
 			<scope>compile</scope>
 		</dependency>
-		
+
 		<!-- PrimeFaces 6.2 -->
 		<dependency>
 			<groupId>org.primefaces</groupId>
