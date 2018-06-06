@@ -36,7 +36,7 @@ public class TestConnectionFactory {
 		con.setPass("Adoni@s260lac@");
 		con.setForName("org.postgresql.Driver");
 		
-		Connection conexao2 = con.getConnection();
+		Connection conexao = con.getConnection();
 	}
 	
 	
@@ -49,6 +49,6 @@ public class TestConnectionFactory {
 		con.setPass("Adoni@s260lac@");
 		con.setForName("org.postgresql.Drivers");
 		
-		Connection conexao3 = con.getConnection();
+		Connection conexao = con.getConnection();
 	}
 }
