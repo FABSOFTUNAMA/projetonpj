@@ -7,13 +7,9 @@ import java.sql.SQLException;
 public class ConnectionFactory {
 
 	private static Connection connection;
-
 	private static String url = "jdbc:postgresql://179.188.16.128:5432/npjunama";
-
 	private static String user = "npjunama";
-
 	private static String pass = "Adoni@s260lac@";
-	
 	private static String forName = "org.postgresql.Driver";
 
 	public static Connection getConnection() {
@@ -21,7 +17,6 @@ public class ConnectionFactory {
 		try {
 
 			Class.forName(forName);
-
 			connection = DriverManager.getConnection(url, user, pass);
 
 		}
@@ -29,7 +24,6 @@ public class ConnectionFactory {
 		catch (SQLException e) {
 
 			System.out.println("Erro Conexão com Banco de Dados - Detalhes: " + e);
-			
 			throw new RuntimeException(e);
 
 		}
@@ -37,11 +31,10 @@ public class ConnectionFactory {
 		catch (ClassNotFoundException e) {
 
 			System.out.println("Erro Carregamento Driver Conexão - Detalhes: " + e);
-
 			throw new RuntimeException(e);
 
 		}
-
+ 
 		return connection;
 
 	}
