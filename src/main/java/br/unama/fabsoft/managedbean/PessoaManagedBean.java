@@ -3,13 +3,11 @@ package br.unama.fabsoft.managedbean;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
+
 
 import br.unama.fabsoft.bean.PessoaBean;
 
-@ManagedBean(name = "PessoaMB")
-@SessionScoped
+
 public class PessoaManagedBean {
 
 	private PessoaBean cliente = new PessoaBean();
